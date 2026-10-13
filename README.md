@@ -5,7 +5,7 @@ once. Claude then works through a 9-step pipeline: brief, script, music and voic
 critique and finals. It stops at every step that needs taste and waits for your "approved". A separate
 critic subagent reviews each draft from the rendered frames, never from the code.
 
-**Made with this kit:** [Habitmon](https://habitmon.in)'s 30-second launch film.
+**Made with this kit:** [Habitmon's 30-second launch film](https://youtu.be/bY-mj3FiPHg) (16:9) and its [vertical Short](https://youtube.com/shorts/qBd2Y9PzNY4) (9:16), both from one timeline. App: [habitmon.in](https://habitmon.in).
 
 ![The 9-step pipeline. Claude Code builds, and you approve at seven gates: brief, script, music and voice, storyboard, animatic and the phone check.](docs/pipeline.png)
 
