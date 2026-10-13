@@ -1,0 +1,51 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "login": {
+    "email": "from .env: CAPTURE_EMAIL",
+    "password": "from .env: CAPTURE_PASSWORD",
+    "path": "/login"
+  },
+  "blockHosts": [
+    ".supabase.co",
+    "api.yourapp.com"
+  ],
+  "checkLocalSupabase": false,
+  "hideSelectors": [],
+  "shots": [
+    {
+      "name": "dashboard-phone",
+      "path": "/dashboard",
+      "viewport": [
+        390,
+        844
+      ],
+      "theme": "dark"
+    },
+    {
+      "name": "dashboard-desktop",
+      "path": "/dashboard",
+      "viewport": [
+        1440,
+        900
+      ],
+      "theme": "dark"
+    },
+    {
+      "name": "detail-desktop",
+      "path": "/dashboard",
+      "viewport": [
+        1440,
+        900
+      ],
+      "theme": "dark",
+      "actions": [
+        {
+          "click": "text=Stats"
+        },
+        {
+          "wait": 800
+        }
+      ]
+    }
+  ]
+}

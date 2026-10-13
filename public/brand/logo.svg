@@ -1,0 +1,7 @@
+<!-- Placeholder logo. Replace with your own single-colour SVG (white or any colour: LogoLockup recolours it). -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="#FFFFFF">
+  <rect x="10" y="10" width="44" height="44" rx="10"/>
+  <rect x="66" y="10" width="44" height="44" rx="22"/>
+  <rect x="10" y="66" width="44" height="44" rx="22"/>
+  <rect x="66" y="66" width="44" height="44" rx="10" opacity="0.55"/>
+</svg>

@@ -1,0 +1,17 @@
+{
+  "slug": "<slug>",
+  "title": "<title>",
+  "bpm": 120,
+  "beatsPerBar": 4,
+  "lengthBeats": 60,
+  "formats": ["9x16", "16x9"],
+  "marks": { "open": 0, "logo": 52, "end": 60 },
+  "shots": [
+    { "id": "S1", "from": "open", "to": "logo", "what": "<what happens>", "key": "logo-1" },
+    { "id": "S2", "from": "logo", "to": "end", "what": "Logo lockup + app URL", "key": "end-0.5" }
+  ],
+  "sfx": [{ "at": "logo", "type": "thump", "gain": 0.85, "what": "logo lands" }],
+  "vo": [],
+  "music": { "source": "synth", "file": "audio/music.wav", "startBeat": 0, "sections": [{ "at": "open", "kind": "intro" }, { "at": "logo", "kind": "drop" }], "accents": ["logo"] },
+  "mix": { "musicDb": -2, "voDb": 0, "sfxDb": -5, "duckDb": -9 }
+}

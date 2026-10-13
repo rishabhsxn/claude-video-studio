@@ -1,0 +1,7 @@
+{
+  "appName": "{{APP_NAME}}",
+  "appSlug": "{{APP_SLUG}}",
+  "appUrl": "{{APP_URL}}",
+  "appRepoPath": "{{APP_REPO_PATH}}",
+  "logo": "brand/logo.svg"
+}

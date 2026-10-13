@@ -1,0 +1,113 @@
+{
+  "slug": "smoke",
+  "title": "Pipeline smoke test",
+  "bpm": 120,
+  "beatsPerBar": 4,
+  "lengthBeats": 10,
+  "formats": [
+    "9x16",
+    "16x9"
+  ],
+  "marks": {
+    "open": 0,
+    "line2": 1.5,
+    "out": 3.25,
+    "logo": 4,
+    "word": 6,
+    "url": 7,
+    "end": 10
+  },
+  "shots": [
+    {
+      "id": "S1",
+      "from": "open",
+      "to": "logo",
+      "what": "Two-tone headline rises over the liquid backdrop",
+      "key": "out"
+    },
+    {
+      "id": "S2",
+      "from": "logo",
+      "to": "end",
+      "what": "Logo mark rises, wordmark, the app URL",
+      "key": "end-0.5"
+    }
+  ],
+  "sfx": [
+    {
+      "at": "open",
+      "type": "pop",
+      "gain": 0.55,
+      "what": "first line reads"
+    },
+    {
+      "at": "line2",
+      "type": "pop",
+      "gain": 0.5,
+      "what": "second line reads"
+    },
+    {
+      "at": "logo",
+      "type": "riser",
+      "gain": 0.35,
+      "what": "build into the logo"
+    },
+    {
+      "at": "logo",
+      "type": "thump",
+      "gain": 0.85,
+      "what": "first bar lands"
+    },
+    {
+      "at": "logo+0.5",
+      "type": "tick",
+      "every": 0.5,
+      "until": "logo+1.5",
+      "gain": 0.35,
+      "what": "bars 2-4 land"
+    },
+    {
+      "at": "word",
+      "type": "pop",
+      "gain": 0.5,
+      "what": "wordmark lifts in"
+    },
+    {
+      "at": "url",
+      "type": "click",
+      "gain": 0.45,
+      "what": "app URL lands"
+    }
+  ],
+  "vo": [],
+  "music": {
+    "source": "synth",
+    "file": "audio/music.wav",
+    "startBeat": 0,
+    "chords": [
+      "Am7",
+      "Fmaj7",
+      "C",
+      "G"
+    ],
+    "sections": [
+      {
+        "at": "open",
+        "kind": "intro"
+      },
+      {
+        "at": "logo",
+        "kind": "drop"
+      }
+    ],
+    "accents": [
+      "logo"
+    ]
+  },
+  "mix": {
+    "musicDb": -2,
+    "voDb": 0,
+    "sfxDb": -5,
+    "duckDb": -9
+  }
+}

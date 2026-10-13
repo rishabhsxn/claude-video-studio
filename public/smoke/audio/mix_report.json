@@ -1,0 +1,12 @@
+{
+ "lufs": -14.04,
+ "truePeakDb": -1.16,
+ "limiterMaxGrDb": 2.54,
+ "levels": {
+  "musicDb": -2,
+  "voDb": 0,
+  "sfxDb": -5,
+  "duckDb": -9
+ },
+ "durationSec": 5
+}

@@ -1,0 +1,50 @@
+{
+  "name": "claude-video-studio",
+  "version": "1.0.0",
+  "description": "Claude Code skill + Remotion kit for product promo videos: approval gates, a beat-timed timeline and a frame-critic subagent",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rishabhsxn/claude-video-studio.git"
+  },
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@remotion/bundler": "4.0.528",
+    "@remotion/captions": "4.0.528",
+    "@remotion/cli": "4.0.528",
+    "@remotion/fonts": "4.0.528",
+    "@remotion/google-fonts": "4.0.528",
+    "@remotion/lottie": "4.0.528",
+    "@remotion/media": "4.0.528",
+    "@remotion/motion-blur": "4.0.528",
+    "@remotion/renderer": "4.0.528",
+    "@remotion/transitions": "4.0.528",
+    "lucide-react": "0.460.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "recharts": "2.15.1",
+    "remotion": "4.0.528"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.528",
+    "@types/react": "19.2.7",
+    "@types/web": "0.0.166",
+    "eslint": "9.39.5",
+    "playwright": "^1.63.0",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "dev": "remotion studio",
+    "build": "remotion bundle",
+    "upgrade": "remotion upgrade",
+    "lint": "eslint src && tsc",
+    "placeholders": "bash tools/placeholders.sh"
+  },
+  "sideEffects": [
+    "*.css"
+  ],
+  "overrides": {
+    "react-is": "19.2.3"
+  }
+}

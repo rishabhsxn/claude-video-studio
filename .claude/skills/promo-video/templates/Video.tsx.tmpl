@@ -1,0 +1,24 @@
+import React from "react";
+import { LiquidBackdrop } from "../../src/kit/LiquidBackdrop";
+import { LogoLockup } from "../../src/kit/LogoLockup";
+import { Shot, Stage, type VideoProps } from "../../src/kit/Stage";
+import { useFormat } from "../../src/motion/format";
+import type { ResolvedTimeline } from "../../src/motion/timeline";
+import resolved from "./timeline.resolved.json";
+
+export const timeline = resolved as unknown as ResolvedTimeline;
+
+// One import per shot from ./scenes once they exist, e.g. import { S1 } from "./scenes/S1";
+
+export const Component: React.FC<VideoProps> = ({ draft }) => {
+  const f = useFormat();
+  return (
+    <Stage timeline={timeline} draft={draft} backdrop={<LiquidBackdrop loopSec={timeline.durationSec / 2} center={f.pick([0.8, 0.5], [0.7, 0.68])} />}>
+      <Shot id="S2" pre={0.5}>
+        <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <LogoLockup at="logo" wordAt="logo+2" width={f.pick(760, 640) * f.u} pushFrom="logo" pushTo="end" />
+        </div>
+      </Shot>
+    </Stage>
+  );
+};
